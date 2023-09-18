@@ -1,0 +1,187 @@
+body {
+    background-image: linear-gradient(#429EC5, #77BDBB);
+    background-attachment: fixed;
+}
+
+body * {
+    border-radius: 10px;
+    margin: auto;
+    max-width: 640px;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.solid-container {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border: none;
+    background-color: white;
+    box-shadow: 5px 5px #BD504E;
+    
+}
+
+.solid-container li {
+    padding-bottom: 10px;
+    color: #BD504E
+}
+
+.solid-container-comissions {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    box-shadow: 5px 5px #BD504E;
+}
+
+#profileImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #DED8BE;
+}
+
+.about h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h2 {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.yellow-color {
+    color: #DED8BE;
+}
+
+button {
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    box-shadow: 5px 5px #BD504E;
+}
+
+#socials {
+    border-style: solid;
+    border-color: #DED8BE;
+    padding: 20px;
+    margin-bottom: 20px
+}
+
+#socials button {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#socials button:hover {
+    background-color: #C04C55;
+    color: white
+}
+
+.projects img {
+    width: 100%;
+    box-shadow: 5px 5px #DED8BE;
+    margin-bottom: 20px;
+}
+
+#mailList p {
+    margin: 10px;
+}
+
+hr {
+    color: #BD504E
+}
+
+input {
+    width: 60%;
+    height: 40px;
+    margin: 5px;
+    border-radius: 0px;
+    border: none;
+    background-color: whitesmoke
+}
+
+
+form :last-child {
+    background-color: white;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #BD504E;
+    color: #BD504E;
+    margin: 20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px
+}
+
+form :last-child:hover {
+    background-color: #BD504E;
+    color: white
+}
+
+#mailList p:last-child {
+    font-size: 12px;
+    text-align: left;
+}
+
+.slidecontainer {
+    width: 100px;
+    position: absolute;
+    right: 1%;
+    padding: 10px;
+}
+
+.slider {
+    margin: 0;
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: pink;
+    outline: none;
+    opacity: 0.7;
+    transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;   
+}
+
+.slider:hover {
+    opacity: 1
+}
+
+.slider::-moz-range-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer
+}
+
+th, td {
+    border: 1px solid #BD504E;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+td:first-child {
+    text-align: left;
+}
