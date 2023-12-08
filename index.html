@@ -1,66 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>morriebird</title>
-    <script src="./index.js"></script>
-    <link href="./index.css" rel="stylesheet" type="text/css" media="all" />
-  </head>
-  <body>
-    <div class="container">
-      <img id="profileImage" src="./images/monkey_small_morriebird.png" />
 
-      <div class="about">
-        <h1 id="name">morriebird</h1>
-        <p id="blurb">I draw slice-of-life fantasy comics and furry smut.</p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>morriebird</title>
+  <script src="./index.js"></script>
+  <link href="./index.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="./carousel.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="./furriebird.css" rel="stylesheet" type="text/css" media="all" />
+</head>
 
-      <!-- NAVBAR -->
-      <div class="solid-container">
+<body>
+  <div class="container">
+    <img id="profileImage" src="./images/monkey_rlsmall_morriebird.png" />
+
+    <div class="about">
+      <h1 id="name">morriebird</h1>
+      <p id="blurb">I draw slice-of-life fantasy comics and stuff for tabletop games.</p>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="solid-container">
+      <ul>
+        <li><a href="https://tapas.io/episode/2759596">Read My Comics</a></li>
+      </ul>
+    </div>
+
+    <!-- SOCIALS  -->
+    <div id="socials" class="yellow-color">
+      <h2>socials</h2>
+      <a href="https://mastodon.art/@morriebird"><button>🦣 mastodon</button></a>
+      <a href="https://bsky.app/profile/morriebird.bsky.social"><button>🟦 bluesky</button></a>
+    </div>
+
+    <!-- COMMISSIONS  -->
+    <div class="solid-container-comissions">
+      <h2 id="header2-comissions">Commission Me</h2>
+      <p style="padding-bottom: 20px;">Please email me at <strong>morriebird@gmail.com</strong>! I know budgets for projects can be varied so let's chat! I love line art the most but I can do basic color.</p>
+
+      <div>
+        <hr>
+        <h3>Payment Methods 🤝</h3>
         <ul>
-          <li><a href="https://tapas.io/episode/2759596">Read My Comics</a></li>
+          <li>paypal only</li>
         </ul>
       </div>
 
-      <!-- SOCIALS  -->
-      <div id="socials" class="yellow-color">
-        <h2>socials</h2>
-        <a href="https://mastodon.art/@morriebird"
-          ><button>🦣 mastodon</button></a
-        >
-        <a href="https://bsky.app/profile/morriebird.bsky.social"
-          ><button>🟦 bluesky</button></a
-        >
+      <div>
+
+        <hr>
+        <h3>Examples ✨</h3>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./images/slmsndepcrs_killjester_morriebird.png" style="object-fit: contain;">
+            <div class="text">A commissioned cover for <a href="https://www.killjester.com/">Kill Jester</a></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./images/lflkdl_morriebird_zeth.png" style="object-fit: contain">
+            <div class="text">Internal line art</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./images/spcdl_morriebird_zeth.png" style="object-fit: contain">
+            <div class="text">Internal line art</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+
+        <hr>
       </div>
 
-      <button id="mailList">
-        <p>join my mailing list</p>
-        <hr />
-        <form
-          action="https://api.sheetmonkey.io/form/tMB3pfNEVzib6H2NsxmcZt"
-          method="post"
-        >
-          <input type="text" name="Name" placeholder="Name *" required /><br />
-          <input
-            type="email"
-            name="Email"
-            placeholder="Email *"
-            required
-          /><br />
-          <input
-            type="hidden"
-            name="Created"
-            value="x-sheetmonkey-current-date-time"
-          />
-          <input type="submit" value="submit" />
-        </form>
-        <p>
-          Commissions will open soon! I send updates no more than twice a month.
-          Probably not at all! This is the best way to get major updates from me
-          without the noise of social media.
-        </p>
-      </button>
+      <div>
+        <h3 style="padding-top: 10px; padding-bottom: 10px;">Process 🪄</h3>
+        <p style="padding-bottom: 20px;">I’ll share my draft with you so you can make sure I am working in the
+          right
+          direction. When you’re happy with the draft, I’ll ask for complete payment before I finish.</p>
+      </div>
+
+      <div>
+        <hr>
+        <h3 style="padding-top: 10px; padding-bottom: 10px;">Please Read 🔍</h3>
+        <ul>
+          <li>I will <strong>not</strong> draw:
+            <ul>
+              <li>White supremacy/facist propaganda. I'm not a fan of genetically evil races and "hero" cops (ACAB).</li>
+              <li>SWERF bullshit</li>
+              <li>TERF bullshit</li>
+              <li>Illegal imagery of minors, including child like fictional characters.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
     </div>
-  </body>
+
+    <button id="mailList">
+      <p>join my mailing list</p>
+      <hr />
+      <form action="https://api.sheetmonkey.io/form/tMB3pfNEVzib6H2NsxmcZt" method="post">
+        <input type="text" name="Name" placeholder="Name *" required /><br />
+        <input type="email" name="Email" placeholder="Email *" required /><br />
+        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+        <input type="submit" value="submit" />
+      </form>
+      <p>
+        I am just getting my bearings as a freelance artist. I don't spam and you'll probably never hear from me. But if I do have something cool to offer then email is the best way to get updates without the noise of social media.
+      </p>
+    </button>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+
 </html>

@@ -94,6 +94,12 @@ button {
     color: white
 }
 
+#img-example {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
 .projects img {
     width: 100%;
     box-shadow: 5px 5px #DED8BE;
