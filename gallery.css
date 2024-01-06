@@ -29,16 +29,18 @@ div.desc {
 .responsive {
     padding: 0 6px;
     float: left;
-    width: 24.99999%;
+    width: 33.3%;
 }
 
-@media only screen and (max-width: 700px) {
+/* >800px, four images per row. <800px, two images per row */
+@media only screen and (max-width: 900px) {
     .responsive {
         width: 49.99999%;
         margin: 6px 0;
     }
 }
 
+/* <500px, stack vertically 100%  */
 @media only screen and (max-width: 500px) {
     .responsive {
         width: 100%;
