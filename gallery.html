@@ -26,41 +26,31 @@
     </div>
 
     <script>
-        const arts = [
-            { title: "skelly", alt: "description of skelly", img: "string", txt: "string", fdbck: "string" },
-            {},
-            {}
+
+        const art = [
+            { title: "skelly", alt: "description of skelly", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "string", fdbck: "string" },
+            { title: "skelly", alt: "description of skelly", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "string", fdbck: "string" },
+            { title: "skelly", alt: "description of skelly", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "string", fdbck: "string" },
         ]
 
-        const textNode = document.createTextNode(
-            `<div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="img_5terre.jpg">
-                        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
-            </div>`
-        )
+        let gallery = ""
+        for (let i = 0; i < art.length; i++) {
+            let element = `<div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="img_5terre.jpg">
+                                <img src="${art[i].img}" alt="${art[i].alt}" width="600" height="400">
+                            </a>
+                            <div class="desc">Add a description of the image here</div>
+                        </div>
+                     </div>`
 
-        let gallery = document.getElementById("gallery")
+            gallery += element;
+        }
 
-        arts.forEach((art) =>
-
-            let x = `<div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="img_5terre.jpg">
-                        <img src="${art.img}" alt="Cinque Terre" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
-            </div>`
-
-        )
-
-
+        document.getElementById("gallery").innerHTML = gallery;
 
     </script>
+    
 </body>
 
 
