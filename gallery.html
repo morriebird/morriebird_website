@@ -9,38 +9,42 @@
 </head>
 
 <body>
-    <h2>Responsive Image Gallery</h2>
-
-    <h4>Resize the browser window to see the effect.</h4>
+    <h1>Morriebird's Art</h1>
 
     <div id="gallery">
 
     </div>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div id="modal-content">
+
+            </div>
+            <button class="close">&times; Close</button>
+        </div>
+    </div>
+
 
     <div class="clearfix"></div>
 
-    <div style="padding:6px;">
-        <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-    </div>
 
     <script>
 
         const art = [
-            { title: "skelly", alt: "description of skelly", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "string", fdbck: "string" },
-            { title: "skelly", alt: "description of skelly", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "string", fdbck: "string" },
-            { title: "skelly", alt: "description of skelly", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "string", fdbck: "string" },
+            { title: "skelly", alt: "description of skelly", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "string", fdbck: "none" },
+            { title: "skelly", alt: "description of skelly", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "string", fdbck: "none" },
+            { title: "skelly", alt: "description of skelly", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "string", fdbck: "stringadasdwa" },
         ]
+
 
         let gallery = ""
         for (let i = 0; i < art.length; i++) {
             let element = `<div class="responsive">
                         <div class="gallery">
-                            <a target="_blank" href="img_5terre.jpg">
+                            <div id="${i}" onClick="getId(this.id)">
                                 <img src="${art[i].img}" alt="${art[i].alt}" width="600" height="400">
-                            </a>
-                            <div class="desc">Add a description of the image here</div>
+                            </div>
                         </div>
                      </div>`
 
@@ -49,8 +53,60 @@
 
         document.getElementById("gallery").innerHTML = gallery;
 
+        // Get the modal
+        let modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+
+        function getId(clicked_id) {
+
+            let btn = document.getElementById(clicked_id);
+
+            modal.style.display = "block";
+
+
+            function checkFeedBack() {
+                if (art[clicked_id].fdbck === "none") {
+                    return ""
+                } else {
+                    let blockquote = `<div style="border-left: 3px solid white">
+                                        <blockquote>${art[clicked_id].fdbck}</blockquote>
+                                    </div>`
+                    return blockquote
+                }
+            }
+
+            let moduleContent = `<div>
+                                    <img src="${art[clicked_id].img}" alt="${art[clicked_id].alt}"/>
+                                    <h2>${art[clicked_id].title}</h2>
+                                    <p>${art[clicked_id].txt}</p>
+                                    ${checkFeedBack()}
+                                </div>`
+
+
+            document.getElementById("modal-content").innerHTML = moduleContent
+
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
     </script>
-    
+
 </body>
 
 
