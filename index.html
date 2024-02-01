@@ -12,40 +12,42 @@
 </head>
 
 <body>
-  <div class="container">
-    <img id="profileImage" src="./images/monkey_rlsmall_morriebird.png" />
+  <!-- TAB LINKS -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">
+      <div>
+        <img id="profileImage" src="./images/profilepic_morriebird.png" />
+        <div class="about">
+          <h1 id="name">morriebird</h1>
+          <p id="blurb">slice-of-life fantasy comics and stuff for tabletop games. SFW-ish.</p>
+        </div>
+      </div>
+    </button>
 
-    <div class="about">
-      <h1 id="name">morriebird</h1>
-      <p id="blurb">I draw slice-of-life fantasy comics and stuff for tabletop games.</p>
-    </div>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">
+      <div>
+        <img id="profileImage" src="./images/monkey_rlsmall_morriebird.png" />
+        <div class="about">
+          <h1 id="name">furriebird</h1>
+          <p id="blurb">wholesome furry content, furry smut and comics. NSFW.</p>
+        </div>
+      </div>
+    </button>
+  </div>
 
-    <!-- NAVBAR -->
-    <!-- <div class="solid-container">
-      <ul>
-        <li><a href="https://tapas.io/episode/2759596">Read My Comics</a></li>
-      </ul>
-    </div> -->
+  <div id="London" class="tabcontent">
 
-    <!-- SOCIALS  -->
-    <div id="socials" class="yellow-color">
-      <h2>socials</h2>
-      <a href="https://discord.gg/fwKh22tKt5"><button>🤖 discord (morriebird)</button></a>
-      <a href="https://mastodon.art/@morriebird"><button>🦣 mastodon</button></a>
-      <a href="https://bsky.app/profile/morriebird.bsky.social"><button>🟦 bluesky</button></a>
-      <a href="https://www.instagram.com/morriebird/"><button>📷 Instagram</button></a>
-    </div>
+    <!-- ABOUT -->
+    <p>About me</p>
 
     <!-- COMMISSIONS  -->
     <div class="solid-container-comissions">
       <h2 id="header2-comissions">Commission Me</h2>
       <p style="padding-bottom: 10px">DM me via social media (discord will probably get the fastest response) or email me at <strong>morriebird@gmail.com</strong>! </p>
       <p>I'm getting started as a freelance artist so a TBA on a price chart. I'm happy to work with Pay-What-You-Want as I am building my portfolio.</p>
-
       <div>
-
         <hr>
-        <h3>Examples ✨</h3>
+        <h3>Gallery and Pricing✨</h3>
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
@@ -71,6 +73,8 @@
           <button class="red-white-button" style="font-size: 30px"><a class="nostyle" id="toGallery" href="">View Gallery</a></button>
         </div>
 
+        <iframe style="height: 950px; width: 100%" src="https://artistree.io/morriebird" title="description"></iframe>
+
       </div>
 
       <div>
@@ -90,7 +94,7 @@
           <li>I will <strong>not</strong> draw:
             <ul>
               <li>Depictions of real persons.</li>
-              <li>White supremacy/fascist propaganda, e.g., categorically evil fantasy races or "hero" cops (ACAB).</li>
+              <li>White supremacy bullshit, e.g., categorically evil races or "hero cops" (ACAB).</li>
               <li>SWERF bullshit.</li>
               <li>TERF bullshit.</li>
               <li>Sexual imagery of children, including childlike fictional characters.</li>
@@ -104,7 +108,7 @@
         <h3>Copyright</h3>
         <ul>
           <li>I maintain all rights reserved for all work.</li>
-          <li>All commissions are for personal use only unless otherwise arranged for commerical use.</li>
+          <li>All commissions are for personal use only unless otherwise arranged for commercial use.</li>
         </ul>
       </div>
 
@@ -123,7 +127,23 @@
         I am just getting my bearings as a freelance artist. I don't spam and you'll probably never hear from me. But if I do have something cool to offer then email is the best way to get updates without the noise of social media.
       </p>
     </button> -->
+
+    <!-- SOCIALS  -->
+    <div id="socials">
+      <h2>socials</h2>
+      <a href="https://discord.gg/fwKh22tKt5"><button>🤖 discord (morriebird)</button></a>
+      <a href="https://mastodon.art/@morriebird"><button>🦣 mastodon</button></a>
+      <a href="https://bsky.app/profile/morriebird.bsky.social"><button>🟦 bluesky</button></a>
+      <a href="https://www.instagram.com/morriebird/"><button>📷 Instagram</button></a>
+      <a href="https://twitter.com/morriebird"><button>🐦 Twitter</button></a>
+    </div>
   </div>
+
+  <div id="Paris" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
 
   <script>
 
@@ -153,6 +173,29 @@
       }
       slides[slideIndex - 1].style.display = "block";
     }
+
+    // TABS
+
+    function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    } 
   </script>
 </body>
 
