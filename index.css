@@ -52,6 +52,16 @@ body img {
     background-position: center
 }
 
+#image-container-furriebird {
+    width: 100%;
+    vertical-align: top;
+    height: 480px;
+    position: relative;
+    background-image: url("./images/akwllln_cmplxfllbdy_furriebird.png");
+    background-size: cover;
+    background-position: center
+}
+
 #triangle-up {
     width: 0;
     height: 0;
