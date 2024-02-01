@@ -6,6 +6,7 @@ body {
 body * {
     margin: auto;
     max-width: 640px;
+    box-sizing: border-box;
 }
 
 body img {
@@ -15,17 +16,41 @@ body img {
 #gallery {
     background-color: #cb4b16;
     color: white;
-    font-size: 22px;
+    font-size: 30px;
+    position: relative;
 }
 
-#test-container {
- width: 100%;
- height: 480px;
- position: relative;
- background-image:url("./images/jllysklly_klljstr_morriebird.png");
- background-size: cover
+#gallery p {
+    padding: 15px;
 }
 
+#gallery:after {
+    cursor: pointer;
+    content: '\A';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #cb4c162e;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+#gallery:hover:after {
+    opacity: 1;
+}
+
+#image-container {
+    width: 100%;
+    vertical-align: top;
+    height: 480px;
+    position: relative;
+    background-image: url("./images/jllysklly_klljstr_morriebird.png");
+    background-size: cover;
+    background-position: center
+}
 
 #triangle-up {
     width: 0;
@@ -37,14 +62,6 @@ body img {
     z-index: 100;
     position: absolute;
     top: 96%;
-}
-
-/* #gallery img {
-    position: absolute;
-} */
-
-#gallery p {
-    padding: 15px;
 }
 
 .solid-container {

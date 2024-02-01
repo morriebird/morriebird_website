@@ -9,13 +9,95 @@
 </head>
 
 <body>
+
+    <img id="profileImage" src="./images/profilepic_morriebird.png" />
     <h1>Morriebird's Art</h1>
-
-    <div id="gallery">
-
+    <div>
+        <div>
+            <h2 id="header2-comissions">Contact</h2>
+            <ul>
+                <li>email: morriebird@gmail.com</li>
+                <li>discord username: morriebird</li>
+                <li><a style="color: white" href="https://ko-fi.com/morriebird/commissions">ko-fi: quick commissions requests</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h2>🔍 Please Read</h2>
+            <ul>
+                <li>I will <strong>not</strong> draw:
+                    <ul>
+                        <li>Depictions of real persons.</li>
+                        <li>White supremacy bullshit, e.g., categorically evil races or "hero cops" (ACAB).</li>
+                        <li>SWERF bullshit.</li>
+                        <li>TERF bullshit.</li>
+                        <li>Sexual imagery of children, including childlike fictional characters.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h2>Copyright</h2>
+            <ul>
+                <li>I maintain all rights reserved for all work.</li>
+                <li>All commissions are for personal use only unless otherwise arranged for commercial use.</li>
+            </ul>
+        </div>
     </div>
 
-    <iframe style="height: 1000px; width: 80%; background: white" src="https://artistree.io/morriebird" title="description"></iframe>
+    <div id="gallery"></div>
+
+    <div class="clearfix"></div>
+
+    <div>
+        <hr>
+        <h2 id="header2-comissions">Price Chart</h2>
+        <div>
+            <h3>Process and Payment</h3>
+            <ul>
+                <li>Prices are negotiable, please ask!</li>
+                <li>Paypal only</li>
+                <li>I'll share drafts/WIP and will request complete payment before I finish work.</li>
+                <li>Commissions are not first come, first serve.</li>
+            </ul>
+        </div>
+        <div>
+            <hr>
+            <h3>Simple Portrait</h3>
+            <img src="./images/mrvnglss_morriebird.png">
+            <ul>
+                <li>Black and white, digital pencil.</li>
+                <li>Simple portraits can include half body with limited motion and detail.</li>
+                <li>Starting price: $30</li>
+            </ul>
+        </div>
+        <div>
+            <hr>
+            <h3>Complex Portrait</h3>
+            <img src="./images/lflkdl_zth_morriebird.png">
+            <ul>
+                <li>Black and white, digital pencil.</li>
+                <li>A complex portrait includes dramatic poses, motion, multiple subjects, detailed backgrounds.</li>
+                <li>Starting price: $60</li>
+            </ul>
+        </div>
+        <div>
+            <hr>
+            <h3>Simple Full-Body</h3>
+            <img src="./images/vllgby_morriebird.png">
+            <ul>
+                <li>Black and white, digital pencil.</li>
+                <li>Simple full-body includes idle poses, no background</li>
+                <li>Starting price: $65</li>
+            </ul>
+        </div>
+        <hr>
+    </div>
+
+    <iframe id='kofiframe' src='https://ko-fi.com/morriebird/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='morriebird'></iframe>
+
+
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -28,20 +110,19 @@
     </div>
 
 
-    <div class="clearfix"></div>
 
 
     <script>
 
         const art = [
             {
-                title: "Cover | Sanctimonious Slimes vs Expired Epicures", alt: "Two skeletons (left) sit together. The left most skeleton holds a pitcher above its head to pour drink into its mouth. The rightmost skeleton admires a flower. Three slime creatures (right) look at the skeletons in disgust. Snakes decorate the background and border of the image; all emerging from a cracked skull (top). The text reads, Sanctimonious Slimes vs Expired Epicures, A Dungeon Delve Adventure Nick LS Whelan. ", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "A cover for Sanctimonious Slimes vs Expired Epicures by Nick LS Whelan, commissioned by <a href='https://www.killjester.com/'>Kill Jester Publishing</a>", fdbck: "none"
-            },
-            {
                 title: "Eelfolk Duel", alt: "Two anthropomorphic eels pistol duel. The eel in the foreground is shot in the shoulder by the eel in the background.", img: "./images/lflkdl_zth_morriebird.png", txt: "A commission for Eel Folk Aristocrat, a DURF Archetype written by Kris Redmond. Created for DURF JAM 2023 you <a href='https://sniffycrab.itch.io/eel-folk-aristocrat'>download Eel Folk Aristocrat on itch.io.</a>. ", fdbck: "none"
             },
             {
                 title: "Eelfolk Duel", alt: "Two anthropomorphic eels pistol duel. The eel in the foreground is shot in the shoulder by the eel in the background.", img: "./images/spcdl_zth_morriebird.png", txt: "A commission for Eel Folk Aristocrat, a DURF Archetype written by Kris Redmond. Created for DURF JAM 2023 you <a href='https://sniffycrab.itch.io/eel-folk-aristocrat'>download Eel Folk Aristocrat on itch.io.</a>. ", fdbck: "none"
+            },
+            {
+                title: "Cover | Sanctimonious Slimes vs Expired Epicures", alt: "Two skeletons (left) sit together. The left most skeleton holds a pitcher above its head to pour drink into its mouth. The rightmost skeleton admires a flower. Three slime creatures (right) look at the skeletons in disgust. Snakes decorate the background and border of the image; all emerging from a cracked skull (top). The text reads, Sanctimonious Slimes vs Expired Epicures, A Dungeon Delve Adventure Nick LS Whelan. ", img: "./images/slmsndepcrs_killjester_morriebird.png", txt: "A cover for Sanctimonious Slimes vs Expired Epicures by Nick LS Whelan, commissioned by <a href='https://www.killjester.com/'>Kill Jester Publishing</a>", fdbck: "none"
             },
             {
                 title: "Skelly and Jelly", alt: "A skeleton pulls a single grape from a bunch with their teeth, and gazes at a wine glass they're holding in the foreground. Inside the glass a slime glares back.", img: "./images/jllysklly_klljstr_morriebird.png", txt: "An interior piece for Sanctimonious Slimes vs Expired Epicures by Nick LS Whelan. commissioned by <a href='https://www.killjester.com/'>Kill Jester Publishing</a>. I wanted to depict the relationship between the Slimes and Undead. ", fdbck: "none"
@@ -53,6 +134,7 @@
 
 
         let gallery = ""
+
         for (let i = 0; i < art.length; i++) {
             let element = `<div class="responsive">
                         <div class="gallery">

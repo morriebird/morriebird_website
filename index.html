@@ -5,17 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>morriebird</title>
-  <script src="./index.js"></script>
   <link href="./index.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="./carousel.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="./furriebird.css" rel="stylesheet" type="text/css" media="all" />
-  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 </head>
 
 <body>
+  <p style="color: #93a1a1">Hi, I'm morrie. I got two main profiles! Please pick!</p>
   <!-- TAB LINKS -->
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'London')">
+    <button class="tablinks" onclick="openProfile(event, 'Morriebird')">
       <div>
         <img id="profileImage" src="./images/profilepic_morriebird.png" />
         <div class="about">
@@ -25,7 +22,7 @@
       </div>
     </button>
 
-    <button class="tablinks" onclick="openCity(event, 'Paris')">
+    <button class="tablinks" onclick="openProfile(event, 'Furriebird')">
       <div>
         <img id="profileImage" src="./images/monkey_rlsmall_morriebird.png" />
         <div class="about">
@@ -36,119 +33,26 @@
     </button>
   </div>
 
-  <div id="London" class="tabcontent">
-    <div id="gallery">
-      <div id="test-container">
-        <div id="triangle-up"></div>
-      </div>
-      <p>View Gallery | Commission Info</p>
-    </div>
+  <div id="Morriebird" class="tabcontent">
 
-    <div style="width: 100%; text-align: center;">
-      <button>📷 Instagram</button>
-      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'M4M695AFP');kofiwidget2.draw();</script> 
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- COMMISSIONS  -->
-    <div class="solid-container-comissions">
-      <h2 id="header2-comissions">Commission Me</h2>
-      <p style="padding-bottom: 10px">DM me via social media (discord will probably get the fastest response) or email me at <strong>morriebird@gmail.com</strong>! </p>
-      <p>I'm getting started as a freelance artist so a TBA on a price chart. I'm happy to work with Pay-What-You-Want as I am building my portfolio.</p>
-      <div>
-        <hr>
-        <h3>Gallery and Pricing✨</h3>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-          <!-- Full-width images  -->
-          <div class="mySlides">
-            <img src="./images/slmsndepcrs_killjester_morriebird.png" style="object-fit: scale;">
-          </div>
-
-          <div class="mySlides">
-            <img src="./images/jllysklly_klljstr_morriebird.png" style="object-fit: scale">
-          </div>
-
-          <div class="mySlides">
-            <img src="./images/lflkdl_zth_morriebird.png" style="object-fit: scale">
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- GALLERY IMAGE AND BUTTON -->
+    <a href="https://www.morriebird.art/gallery.html" class="nostyle">
+      <div id="gallery">
+        <div id="image-container">
+          <div id="triangle-up"></div>
         </div>
-
-        <div style="text-align: center">
-          <button class="red-white-button" style="font-size: 30px"><a class="nostyle" id="toGallery" href="">View Gallery</a></button>
-        </div>
-
-        <iframe style="height: 950px; width: 100%" src="https://artistree.io/morriebird" title="description"></iframe>
-
+        <p>View Gallery | Commission Info</p>
       </div>
+    </a>
 
-      <div>
-        <hr>
-        <h3>Process and Payment 🤝</h3>
-        <ul>
-          <li>paypal only</li>
-          <li>I’ll share my draft with you so you can make sure I am working in the right direction. When you’re happy with the draft, I’ll ask for complete payment before I finish.</li>
-          <li>Commissions are not first come, first serve.</li>
-        </ul>
-      </div>
-
-      <div>
-        <hr>
-        <h3>Please Read 🔍</h3>
-        <ul>
-          <li>I will <strong>not</strong> draw:
-            <ul>
-              <li>Depictions of real persons.</li>
-              <li>White supremacy bullshit, e.g., categorically evil races or "hero cops" (ACAB).</li>
-              <li>SWERF bullshit.</li>
-              <li>TERF bullshit.</li>
-              <li>Sexual imagery of children, including childlike fictional characters.</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <hr>
-        <h3>Copyright</h3>
-        <ul>
-          <li>I maintain all rights reserved for all work.</li>
-          <li>All commissions are for personal use only unless otherwise arranged for commercial use.</li>
-        </ul>
-      </div>
-
+    <div style="margin-top: 30px">
+      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+      <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'M4M695AFP'); kofiwidget2.draw();</script>
+      <iframe id='kofiframe' src='https://ko-fi.com/morriebird/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='morriebird'></iframe>
     </div>
 
-    <!-- <button id="mailList">
-      <p>join my mailing list</p>
-      <hr />
-      <form action="https://api.sheetmonkey.io/form/tMB3pfNEVzib6H2NsxmcZt" method="post">
-        <input type="text" name="Name" placeholder="Name *" required /><br />
-        <input type="email" name="Email" placeholder="Email *" required /><br />
-        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-        <input type="submit" value="submit" />
-      </form>
-      <p>
-        I am just getting my bearings as a freelance artist. I don't spam and you'll probably never hear from me. But if I do have something cool to offer then email is the best way to get updates without the noise of social media.
-      </p>
-    </button> -->
-
-    <!-- SOCIALS  -->
-    <div id="socials">
+    <!-- SOCIALS MORRIEBIRD  -->
+    <div id="socials" style="margin-top: 30px">
       <h2>socials</h2>
       <a href="https://discord.gg/fwKh22tKt5"><button>🤖 discord (morriebird)</button></a>
       <a href="https://mastodon.art/@morriebird"><button>🦣 mastodon</button></a>
@@ -156,13 +60,13 @@
       <a href="https://www.instagram.com/morriebird/"><button>📷 Instagram</button></a>
       <a href="https://twitter.com/morriebird"><button>🐦 Twitter</button></a>
     </div>
+
   </div>
 
-  <div id="Paris" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
+  <div id="Furriebird" class="tabcontent">
+    <h3>Furriebird</h3>
+    <p>Furriebird is the capital of France.</p>
   </div>
-
 
   <script>
 
@@ -186,16 +90,10 @@
       let i;
       let slides = document.getElementsByClassName("mySlides");
       if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[slideIndex - 1].style.display = "block";
+      if (n < 1) { slideIndex = slides.length } for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; } slides[slideIndex - 1].style.display = "block";
     }
 
-    // TABS
-
-    function openCity(evt, cityName) {
+    function openProfile(evt, cityName) {
       // Declare all variables
       var i, tabcontent, tablinks;
 
@@ -215,14 +113,8 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     } 
-
-  kofiWidgetOverlay.draw('morriebird', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#f45d22',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
   </script>
+
 </body>
 
 </html>
