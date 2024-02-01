@@ -9,6 +9,7 @@
   <link href="./index.css" rel="stylesheet" type="text/css" media="all" />
   <link href="./carousel.css" rel="stylesheet" type="text/css" media="all" />
   <link href="./furriebird.css" rel="stylesheet" type="text/css" media="all" />
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 </head>
 
 <body>
@@ -36,9 +37,27 @@
   </div>
 
   <div id="London" class="tabcontent">
+    <div id="gallery">
+      <div id="test-container">
+        <div id="triangle-up"></div>
+      </div>
+      <p>View Gallery | Commission Info</p>
+    </div>
 
-    <!-- ABOUT -->
-    <p>About me</p>
+    <div style="width: 100%; text-align: center;">
+      <button>📷 Instagram</button>
+      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'M4M695AFP');kofiwidget2.draw();</script> 
+    </div>
+
+
+
+
+
+
+
+
+
+
 
     <!-- COMMISSIONS  -->
     <div class="solid-container-comissions">
@@ -196,6 +215,13 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     } 
+
+  kofiWidgetOverlay.draw('morriebird', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#f45d22',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
   </script>
 </body>
 

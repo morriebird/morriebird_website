@@ -8,6 +8,45 @@ body * {
     max-width: 640px;
 }
 
+body img {
+    width: 100%;
+}
+
+#gallery {
+    background-color: #cb4b16;
+    color: white;
+    font-size: 22px;
+}
+
+#test-container {
+ width: 100%;
+ height: 480px;
+ position: relative;
+ background-image:url("./images/jllysklly_klljstr_morriebird.png");
+ background-size: cover
+}
+
+
+#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #cb4b16;
+    position: absolute;
+    z-index: 100;
+    position: absolute;
+    top: 96%;
+}
+
+/* #gallery img {
+    position: absolute;
+} */
+
+#gallery p {
+    padding: 15px;
+}
+
 .solid-container {
     text-align: left;
     padding: 20px;
