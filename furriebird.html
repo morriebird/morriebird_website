@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>morriebird</title>
+  <link href="./index.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+  <!-- HEADER INTRO -->
+  <div>
+    <img id="profileImage" src="./images/profilepic_morriebird.png" />
+    <div class="about">
+      <h1 id="name">morriebird</h1>
+      <p id="blurb">slice-of-life fantasy comics and stuff for tabletop games. SFW-ish.</p>
+    </div>
+  </div>
+
+  <!-- TAB LINKS -->
+  <div class="tab">
+    <button class="tablinks active" onclick="openProfile(event, 'Morriebird')">
+    </button>
+
+    <button class="tablinks" onclick="openProfile(event, 'Furriebird')">
+      <!-- <div>
+        <img id="profileImage" src="./images/monkey_morriebird_cropped.png" />
+        <div class="about">
+          <h1 id="name">furriebird</h1>
+          <p id="blurb">wholesome furry content, furry smut and comics. NSFW.</p>
+        </div>
+      </div> -->
+    </button>
+  </div>
+
+  <!-- MORRIEBIRD PROFILE -->
+  <div id="Morriebird" class="tabcontent" style="display: block;">
+    <div>
+      <h2>About Me</h2>
+
+      <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci doloribus aliquam expedita accusantium dolorem dignissimos autem libero totam neque tempore mollitia enim aut labore quasi veniam, tempora voluptatem reiciendis. Corporis!</p>
+    </div>
+
+    <h2>Current Work</h2>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, doloribus ea! Pariatur deserunt eaque nemo eum architecto. Quibusdam a consectetur, hic illo voluptatum error perferendis accusantium quos eaque corporis id?</p>
+      <button>join email list</button>
+      <button>support me</button>
+      <button>learn more</button>
+      <a href="https://www.morriebird.art/gallery.html" class="nostyle">
+        <div id="gallery">
+          <div id="image-container">
+            <div id="triangle-up"></div>
+          </div>
+          <p>Learn more</p>
+        </div>
+      </a>
+    </div>
+      
+
+    <!-- GALLERY IMAGE AND BUTTON -->
+    <h2>Hire Me</h2>
+    <a href="https://www.morriebird.art/gallery.html" class="nostyle">
+      <div id="gallery">
+        <div id="image-container">
+          <div id="triangle-up"></div>
+        </div>
+        <p>View Gallery & Commission Info</p>
+      </div>
+    </a>
+
+    <div style="margin-top: 30px">
+      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+      <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'M4M695AFP'); kofiwidget2.draw();</script>
+      <iframe id='kofiframe' src='https://ko-fi.com/morriebird/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='morriebird'></iframe>
+    </div>
+
+    <!-- SOCIALS MORRIEBIRD  -->
+    <div id="socials" style="margin-top: 30px">
+      <h2>socials</h2>
+      <a href="https://discord.gg/fwKh22tKt5"><button>🤖 discord (morriebird)</button></a>
+      <a href="https://mastodon.art/@morriebird"><button>🦣 mastodon</button></a>
+      <a href="https://bsky.app/profile/morriebird.bsky.social"><button>🟦 bluesky</button></a>
+      <a href="https://www.instagram.com/morriebird/"><button>📷 Instagram</button></a>
+      <a href="https://twitter.com/morriebird"><button>🐦 Twitter</button></a>
+    </div>
+
+  </div>
+
+  <div id="Furriebird" class="tabcontent">
+
+    <!-- GALLERY IMAGE AND BUTTON FURRIEBIRD -->
+    <a href="https://www.morriebird.art/galleryfurriebird.html" class="nostyle">
+      <div id="gallery">
+        <div id="image-container-furriebird">
+          <div id="triangle-up"></div>
+        </div>
+        <p>View Gallery & Commission Info</p>
+      </div>
+    </a>
+
+    <!-- SOCIALS MORRIEBIRD  -->
+    <div id="socials" style="margin-top: 30px">
+      <h2>socials</h2>
+      <a href="https://www.furaffinity.net/user/furriebird"><button>🐾 furaffinity (nfsw)</button></a>
+      <a href="https://www.tiktok.com/@furriebird?lang=en"><button>🎶 tiktok (sfw)</button></a>
+      <a href="https://discord.gg/fwKh22tKt5"><button>🤖 discord, username morriebird</button></a>
+      <a href="https://bsky.app/profile/furriebird.bsky.social"><button>🟦 bluesky (nfsw)</button></a>
+      <a href="https://twitter.com/furriebird"><button>🐦 Twitter (nsfw)</button></a>
+    </div>
+
+  </div>
+
+  <script>
+
+    let baseUrl = window.location.href;
+    let aTag = document.getElementById("toGallery");
+    console.log(baseUrl)
+    aTag.setAttribute("href", baseUrl + "gallery.html");
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length } for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; } slides[slideIndex - 1].style.display = "block";
+    }
+
+    function openProfile(evt, profileName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(profileName).style.display = "block";
+      evt.currentTarget.className += " active";
+    } 
+  </script>
+
+</body>
+
+</html>
