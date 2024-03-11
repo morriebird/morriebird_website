@@ -5,8 +5,12 @@ body {
 
 body * {
     margin: auto;
-    max-width: 680px;
+    max-width: 720px;
     box-sizing: border-box;
+}
+
+b {
+    text-decoration: underline;
 }
 
 hr {
@@ -44,12 +48,32 @@ hr {
     border-radius: 2px;
 }
 
+.socials {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.socials a {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
+#about-me p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
 .project-showcase {
     display: flex;
     margin-top: 10px;
 }
 
-.project-showcase > div {
+.project-showcase>div {
     width: 50%;
     height: auto;
     overflow: hidden;
@@ -60,7 +84,8 @@ hr {
     .project-showcase {
         display: block;
     }
-    .project-showcase > div {
+
+    .project-showcase>div {
         width: 100%;
         height: auto;
         overflow: hidden;
@@ -82,6 +107,7 @@ hr {
 }
 
 .project-showcase-info p {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -98,6 +124,29 @@ hr {
 .project-showcase-info button:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
 /* KO-FI CONTAINER START */
@@ -188,4 +237,5 @@ hr {
     width: 100%;
     margin-top: 3px;
 }
+
 /* GALLERY TAB END */
