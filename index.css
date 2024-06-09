@@ -100,6 +100,35 @@ hr {
     height: 100%;
 }
 
+.addon-table {
+    display: flex;
+    margin-top: 10px;
+}
+
+.addon-table > div {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.addon-table img {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    text-align: center;
+}
+
+.td-buffer {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 22px;
+}
+
 .project-showcase-info {
     vertical-align: top;
     padding: 15px;
