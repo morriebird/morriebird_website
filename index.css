@@ -74,7 +74,7 @@ hr {
     margin-top: 10px;
 }
 
-.project-showcase>div {
+.project-showcase > div {
     width: 50%;
     height: auto;
     overflow: hidden;
@@ -86,7 +86,7 @@ hr {
         display: block;
     }
 
-    .project-showcase>div {
+    .project-showcase > div {
         width: 100%;
         height: auto;
         overflow: hidden;
@@ -184,7 +184,7 @@ hr {
     background-color: inherit;
     color: #ded8be;
     font-size: large;
-    width: 33.3%;
+    width: 25%;
     height: 100%;
     float: left;
     border: none;
