@@ -2,11 +2,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(#002b36, #073642);
     background-attachment: fixed;
+    /* Gives space for ko-fi button on small screens */
+    margin-bottom: 100px;
 }
 
 body * {
     margin: auto;
-    max-width: 720px;
+    max-width: 820px;
     box-sizing: border-box;
 }
 
@@ -65,6 +67,13 @@ hr {
     height: 30px;
 }
 
+#mailing-list-header {
+    text-align: center;
+    color: #ded8be;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
 #about-me p {
     margin-bottom: 12px;
 }
@@ -79,19 +88,6 @@ hr {
     height: auto;
     overflow: hidden;
     border-radius: 2px;
-}
-
-@media only screen and (max-width: 600px) {
-    .project-showcase {
-        display: block;
-    }
-
-    .project-showcase > div {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        border-radius: 2px;
-    }
 }
 
 .project-showcase img {
@@ -166,7 +162,6 @@ td {
     padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
     flex: 50%;
     max-width: 50%;
@@ -181,7 +176,7 @@ td {
 
 /* KO-FI CONTAINER START */
 
-#ko-fi-button {
+.ko-fi-button {
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 30px;
@@ -190,7 +185,7 @@ td {
     text-align: center;
 }
 
-#ko-fi-button p {
+.ko-fi-button p {
     margin-top: 20px;
 }
 
@@ -268,4 +263,56 @@ td {
     margin-top: 3px;
 }
 
+#full-gallery-buttons {
+    text-align: center;
+}
+
+#cara-button {
+    background-color: black;
+    padding: 4px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#cara-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#cara-button img {
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+}
+
+#cara-button img {
+    width: 120px;
+}
+
 /* GALLERY TAB END */
+
+@media only screen and (max-width: 600px) {
+    .project-showcase {
+        display: block;
+    }
+
+    .project-showcase > div {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 2px;
+    }
+
+    .tab button {
+        font-size: smaller;
+        overflow: hidden;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 4px;
+    }
+}

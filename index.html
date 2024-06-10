@@ -10,7 +10,7 @@
     <body>
         <!-- HEADER INTRO -->
         <div>
-            <img id="profileImage" src="./images/profilepic_morriebird.png" />
+            <img id="profileImage" src="./images/profilepic_furriebird_small.png" />
             <div class="about">
                 <h1 id="name">morriebird</h1>
                 <p>I draw comics, and stuff for tabletop games.</p>
@@ -22,11 +22,17 @@
                 </div>
             </div>
             <div class="socials">
-                <a href="https://www.instagram.com/morriebird/">
-                    <img src="./images/socials/instagram.png" />
+                <a href="https://cara.app/morriebird">
+                    <img src="./images/socials/cara-smll.png" />
+                </a>
+                <a href="https://www.furaffinity.net/user/furriebird">
+                    <img src="./images/socials/furaffinity.png" />
                 </a>
                 <a href="https://www.tiktok.com/@morriebird">
                     <img src="./images/socials/tiktok.png" />
+                </a>
+                <a href="https://www.instagram.com/morriebird/">
+                    <img src="./images/socials/instagram.png" />
                 </a>
                 <a href="https://bsky.app/profile/morriebird.bsky.social">
                     <img src="./images/socials/bluesky.png" />
@@ -40,6 +46,10 @@
                 <a href="https://www.youtube.com/@morriebird">
                     <img src="./images/socials/youtube.png" />
                 </a>
+            </div>
+            <div id="mailing-list-header">
+                <p>Join my monthly mailing list! Updates, discounts, and first offers.</p>
+                <script async src="https://eocampaign1.com/form/31db22a4-268d-11ef-a22e-f366b503fa55.js" data-form="31db22a4-268d-11ef-a22e-f366b503fa55"></script>
             </div>
         </div>
 
@@ -94,10 +104,10 @@
                             <p>A low fantasy episodic story following Moreven, a traveling mage who aids people dealing with unusual problems.</p>
                             <p>My inspiration for this story comes from works like Ursula K. Le Guin's <b>Earthsea</b>, Garth Nix's <b>Abhorsen Series</b>, Jack Vance's <b>Cugel's Saga</b>, Yuki Urushibara's <b>Mushishi</b>, and George Miller's <b>Mad Max</b>.</p>
                             <p>This comic is a work in progress! Please join my mailing list, support me on Ko-fi, or follow me on social media to get updates and be part of the creative process.</p>
-                            <div id="ko-fi-button">
+                            <div class="ko-fi-button">
                                 <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
                                 <script type="text/javascript">
-                                    kofiwidget2.init("Support this Project on Ko-fi", "#29abe0", "M4M695AFP");
+                                    kofiwidget2.init("Support this Project", "#29abe0", "M4M695AFP");
                                     kofiwidget2.draw();
                                 </script>
                             </div>
@@ -114,12 +124,12 @@
                     <img src="./images/slmsndepcrs_killjester_morriebird.png" />
                 </div>
                 <div class="project-showcase-info">
-                    <h3>Sanctimonious Slimes vs Expired Epicures</h3>
-                    <p>An adventure written by Nick LS Whelan (Papers and Pencils, Miscreated Creatures) brimming with dynamic factions and weird magic. Delve into the dungeon and face an ennui afflicted medusa, holier-than-thou slime people, and hedonistic skeletons!</p>
+                    <h3>Sanctimonious Slimes vs Expired Epicures (SSVEE)</h3>
+                    <p><i> An adventure written by Nick LS Whelan (Papers and Pencils, Miscreated Creatures) brimming with dynamic factions and weird magic. Delve into the dungeon and face an ennui afflicted medusa, holier-than-thou slime people, and hedonistic skeletons! </i></p>
 
-                    <p>I illustrated the cover and the majority of interior pieces.</p>
-                    <a href="https://sanctimonious-slimes-vs-expired-epicures.backerkit.com/hosted_preorders/">
-                        <button>PRE-ORDER the Print Zine</button>
+                    <p class="ko-fi-button">I illustrated the cover and the majority of interior pieces.</p>
+                    <a href="https://www.killjester.com/products/ssvee">
+                        <button>Get SSVEE from Kill Jester</button>
                     </a>
                 </div>
             </div>
@@ -284,8 +294,24 @@
         <!-- GALLERY TAB -->
         <div id="gllry" class="tabcontent">
             <div class="project-showcase-gallery">
+                <div id="full-gallery-buttons">
+                    Find my full galleries on these sites:
+                    <br />
+                    <a href="https://cara.app/morriebird">
+                        <button id="cara-button">
+                            <img src="./images/socials/cara.png" />
+                        </button>
+                    </a>
+                    <a href="https://cara.app/morriebird">
+                        <button id="cara-button">
+                            <img src="./images/socials/furaffinity.png" />
+                        </button>
+                    </a>
+                </div>
+                <hr />
                 <div class="row">
                     <div class="column">
+                        <img src="./images/mnstrdngsklly_morriebird_40p-protected-intensity-DEFAULT-V2.png" />
                         <img src="./images/slmsndepcrs_killjester_morriebird.png" />
                         <img src="./images/jllysklly_klljstr_morriebird.png" />
                         <img src="./images/spcdl_zth_morriebird.png" />
@@ -390,7 +416,7 @@
         <script>
             kofiWidgetOverlay.draw("morriebird", {
                 type: "floating-chat",
-                "floating-chat.donateButton.text": "Support me",
+                "floating-chat.donateButton.text": "Tip Jar",
                 "floating-chat.donateButton.background-color": "#00b9fe",
                 "floating-chat.donateButton.text-color": "#fff",
             });
