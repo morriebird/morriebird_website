@@ -12,8 +12,16 @@ body * {
     box-sizing: border-box;
 }
 
+a {
+    color: white;
+}
+
 b {
     text-decoration: underline;
+}
+
+li {
+    padding-bottom: 6px;
 }
 
 hr {
@@ -83,7 +91,7 @@ hr {
     margin-top: 10px;
 }
 
-.project-showcase > div {
+.project-showcase>div {
     width: 50%;
     height: auto;
     overflow: hidden;
@@ -101,7 +109,7 @@ hr {
     margin-top: 10px;
 }
 
-.addon-table > div {
+.addon-table>div {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -166,6 +174,7 @@ td {
     flex: 50%;
     max-width: 50%;
     padding: 0 4px;
+    margin-top: 2px;
 }
 
 .column img {
@@ -208,7 +217,7 @@ td {
     background-color: inherit;
     color: #ded8be;
     font-size: large;
-    width: 25%;
+    width: 33.3%;
     height: 100%;
     float: left;
     border: none;
@@ -298,7 +307,7 @@ td {
         display: block;
     }
 
-    .project-showcase > div {
+    .project-showcase>div {
         width: 100%;
         height: auto;
         overflow: hidden;

@@ -1,153 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="’og:title’" content="morriebird's art" />
-        <meta property="’og:image’" content="./images/jllysklly_klljstr_morriebird.png" />
-        <meta property="’og:description’" content="Morriebird's art website." />
-        <meta property="’og:url’" content="https://www.morriebird.art/" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="627" />
-        <meta property="og:type" content="website" />
-        <title>morriebird</title>
-        <link href="./index.css" rel="stylesheet" type="text/css" media="all" />
-    </head>
 
-    <body>
-        <!-- HEADER INTRO -->
-        <div>
-            <img id="profileImage" src="./images/profilepic_furriebird_small.png" />
-            <div class="about">
-                <h1 id="name">morriebird</h1>
-                <p>I draw comics, and stuff for tabletop games.</p>
-                <div id="contact">
-                    <ul>
-                        <li>email: morriebird@gmail.com</li>
-                        <li>discord: morriebird</li>
-                    </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="’og:title’" content="morriebird's art" />
+    <meta property="’og:image’" content="./images/jllysklly_klljstr_morriebird.png" />
+    <meta property="’og:description’" content="Morriebird's art website." />
+    <meta property="’og:url’" content="https://www.morriebird.art/" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:type" content="website" />
+    <title>morriebird</title>
+    <link href="./index.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+    <!-- HEADER INTRO -->
+    <div>
+        <img id="profileImage" src="./images/logo_nowords_cropped.png" />
+        <div class="about">
+            <h1 id="name">morriebird</h1>
+            <p>I draw folklore fantasy, TTRPG stuff, sometimes comics.</p>
+            <div id="contact">
+                <ul>
+                    <li>email: morriebird@gmail.com</li>
+                    <li>discord: morriebird</li>
+                </ul>
+            </div>
+        </div>
+        <div class="socials">
+            <a href="https://bsky.app/profile/morriebird.bsky.social">
+                <img src="./images/socials/bluesky.png" />
+            </a>
+            <a href="https://www.instagram.com/morriebird/">
+                <img src="./images/socials/instagram.png" />
+            </a>
+            <a href="https://cara.app/morriebird">
+                <img src="./images/socials/cara-smll.png" />
+            </a>
+        </div>
+        <div id="mailing-list-header">
+            <p>The internet is dying. Join my mailing list!</p>
+            <script async src="https://eocampaign1.com/form/31db22a4-268d-11ef-a22e-f366b503fa55.js" data-form="31db22a4-268d-11ef-a22e-f366b503fa55"></script>
+        </div>
+    </div>
+
+    <!-- TAB LINKS -->
+    <div class="tab">
+        <button class="tablinks active" onclick="openProfile(event, 'abtm')">
+            <p>About Me</p>
+        </button>
+
+        <button class="tablinks" onclick="openProfile(event, 'wrk')">
+            <p>Work</p>
+        </button>
+
+        <button class="tablinks" onclick="openProfile(event, 'hrm')">
+            <p>Commission</p>
+        </button>
+    </div>
+
+    <!-- MORRIEBIRD PROFILE -->
+    <div id="abtm" class="tabcontent" style="display: block">
+        <hr />
+        <div id="about-me">
+            <p>Hello, I'm morriebird! (she/he)</p>
+            <p>I'm a self-taught artist who takes a lot of inspiration from early edition RPG books and comics like Prince Valiant and Conan the Barbarian. I primarily work digitally with a pencil-like brush reminiscent of my cheap BiC mechanical pencil from when I started on paper.</p>
+            <p>I live in the Pacific Northwest. My background includes environmental restoration, coding, technical writing, and instructional design.</p>
+            <hr />
+            <p> Hire me! I am looking for full-time or part-time work.</p>
+        </div>
+        <hr />
+
+        <div class="project-showcase-gallery">
+
+            <div class="row">
+                <div class="column">
+                    <img src="./images/pkbkrmps_morriebird.png" alt="Two depictions of Krampus interact playfully. In mid center frame a smaller feminine Krampus stands in delightful anticipation. Her black outfit is outlined against the black of a large Krampus devil-like creature loaming over her and covering her eyes. Both wear cuffs with chains. " />
+                    <img src="./images/cultoflambsnooze_morriebird_2.jpg" alt="Cult of the Lamb video game fanart. A cartoonish lamb in a red cloak sleeps on a bed of flowers inside a text decorated with green leaves, candles, a skull, and a large cattle bell. On the right a black hat creature sleeps in a hammock." />
+                    <img src="./images/jllysklly_klljstr_morriebird.png" alt="A skeleton holds a bundle of grapes and bites into one. In the other hand the skeleton holds a wine glass with an angry creature inside. Black and white digital drawing." />
+                    <img src="./images/mny_morriebird_2.jpg" alt="A crocodile peaks its head out of the water with an open expecting mouth as if eager for a snack. The right eye appears to be blind. It's white and almost around like a full moon. Black and white digital drawing.">
+                    <img src="./images/rdflkwrlck_morriebird_2.jpg" alt="A humanoid figure crouches dressed in a long cloak made of reeds that expands around them. They wear a white wooden rectangular mask topped with a reed head garment. An odd ethereal creature appears in the black shape behind them. It abstractly resembles a heron but with long whispy neck and an elongated diamond for head. Black and white digital drawing.">
+
+                </div>
+                <div class="column">
+                    <img src="./images/skllymnstrthrt_morriebird_2.jpg" alt="A skull with an unhinged jaw guides a monster energy drink can down its mouth." />
+                    <img src="./images/trckstrldykrmpssqt_A2_morriebird.jpg" alt="A smug androgynous woman squats in a black dress with red stockings and sleeves and holds a stylized switch (bundle of sticks). Red chains hang from her wrists." />
+                    <img src="./images/mrvnglss_morriebird.png" alt="A close up of a woman's face. She is wearing round glasses. Black and white digital drawing." />
+                    <img src="./images/spdrbttrflywtch_005_morriebird.jpg" alt="The 3rd panel of a 4 panel comic short. The witch casually places the butterfly in a spider's web while she sings La De Daa~!. The spider sits at the top of the web. A black and white digital drawing." />
+                    <img src="./images/whrthrdsgrwrd_morriebird_2.jpg" alt="A massive frog creature floats peacefully in still water with most of its body below the surface. It has a row of pointy teeth and floats among a thicket of tall reeds. The whole scene is brightly illuminated by a full moon that reflects on the water surface. Several skulls are scattered and half buried in the slit below. Black and white digital drawing.">
+
                 </div>
             </div>
-            <div class="socials">
-                <a href="https://cara.app/morriebird">
-                    <img src="./images/socials/cara-smll.png" />
-                </a>
-                <a href="https://www.instagram.com/morriebird/">
-                    <img src="./images/socials/instagram.png" />
-                </a>
-                <a href="https://www.tiktok.com/@morriebird">
-                    <img src="./images/socials/tiktok.png" />
-                </a>
-                <a href="https://bsky.app/profile/morriebird.bsky.social">
-                    <img src="./images/socials/bluesky.png" />
-                </a>
-                <a href="https://mastodon.art/@morriebird">
-                    <img src="./images/socials/mastodon.png" />
-                </a>
-                <a href="https://twitter.com/morriebird">
-                    <img src="./images/socials/twitter.png" />
-                </a>
-                <a href="https://www.youtube.com/@morriebird">
-                    <img src="./images/socials/youtube.png" />
-                </a>
-            </div>
-            <div id="mailing-list-header">
-                <p>Join my monthly mailing list! Updates, discounts, and first offers.</p>
-                <script async src="https://eocampaign1.com/form/31db22a4-268d-11ef-a22e-f366b503fa55.js" data-form="31db22a4-268d-11ef-a22e-f366b503fa55"></script>
-            </div>
         </div>
-
-        <!-- TAB LINKS -->
-        <div class="tab">
-            <button class="tablinks active" onclick="openProfile(event, 'abtm')">
-                <p>About Me</p>
-            </button>
-
-            <button class="tablinks" onclick="openProfile(event, 'wrk')">
-                <p>Work</p>
-            </button>
-
-            <button class="tablinks" onclick="openProfile(event, 'hrm')">
-                <p>Commission</p>
-            </button>
-
-            <button class="tablinks" onclick="openProfile(event, 'gllry')">
-                <p>Gallery</p>
-            </button>
+        <div id="full-gallery-buttons">
+            <hr />
+            Find more of my gallery on Cara:
+            <br />
+            <a href="https://cara.app/morriebird">
+                <button id="cara-button">
+                    <img src="./images/socials/cara.png" />
+                </button>
+            </a>
         </div>
+    </div>
 
-        <!-- MORRIEBIRD PROFILE -->
-        <div id="abtm" class="tabcontent" style="display: block">
-            <hr />
-            <div id="about-me">
-                <p>Hello, I'm morriebird! (she/they)</p>
-                <p>I'm a self-taught artist who takes a lot of inspiration from early edition RPG books and B/W comics like Berserk and Conan. I primarily work digitally with a pencil-like brush reminiscent of my cheap BiC mechanical pencil from when I started on paper.</p>
-                <p>I live in the Pacific Northwest. My background includes environmental restoration, coding, and technical writing. Now I am a full-time freelance artist looking for work!</p>
-            </div>
-            <hr />
-            <div id="mailing-list-container">
-                <script async src="https://eocampaign1.com/form/e101f82c-deab-11ee-84e3-e1d3dd405737.js" data-form="e101f82c-deab-11ee-84e3-e1d3dd405737"></script>
-            </div>
-        </div>
+    <!-- CURRENT AND PAST WORK -->
+    <div id="wrk" class="tabcontent">
 
-        <!-- CURRENT AND PAST WORK -->
-        <div id="wrk" class="tabcontent">
+        <div>
             <hr />
-            Hire me! I'm available to work on long term projects.
+            <h2>Current Work</h2>
+            <hr />
             <div>
-                <hr />
-                <h2>Current Work</h2>
-                <hr />
-                <div>
-                    <div class="project-showcase">
-                        <div>
-                            <img src="./images/mmm_wip_morriebird.png" />
-                        </div>
-                        <div class="project-showcase-info">
-                            <h3>The Meanderings of Moreven the Mage</h3>
-                            <p>A low fantasy episodic story following Moreven, a traveling mage who aids people dealing with unusual problems.</p>
-                            <p>My inspiration for this story comes from works like Ursula K. Le Guin's <b>Earthsea</b>, Garth Nix's <b>Abhorsen Series</b>, Jack Vance's <b>Cugel's Saga</b>, Yuki Urushibara's <b>Mushishi</b>, and George Miller's <b>Mad Max</b>.</p>
-                            <p>This comic is a work in progress! Please join my mailing list, support me on Ko-fi, or follow me on social media to get updates and be part of the creative process.</p>
-                            <div class="ko-fi-button">
-                                <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
-                                <script type="text/javascript">
-                                    kofiwidget2.init("Support this Project", "#29abe0", "M4M695AFP");
-                                    kofiwidget2.draw();
-                                </script>
-                            </div>
+                <div class="project-showcase">
+                    <div>
+                        <img src="./images/mmm_wip_morriebird_new.png" />
+                    </div>
+                    <div class="project-showcase-info">
+                        <h3>The Meanderings of Moreven the Mage</h3>
+                        <p>A comic I personally want made.</p>
+                        <p>A low fantasy episodic story following Moreven, a traveling mage who aids people dealing with unusual problems.</p>
+                        <p>My inspiration for this story comes from works like Ursula K. Le Guin's <b>Earthsea</b>, Garth Nix's <b>Abhorsen Series</b>, Jack Vance's <b>Cugel's Saga</b>, Yuki Urushibara's <b>Mushishi</b>, and George Miller's <b>Mad Max</b>.</p>
+                        <p>I'm making progress! Updates will be on ko-fi.</p>
+                        <div class="ko-fi-button">
+                            <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+                            <script type="text/javascript">
+                                kofiwidget2.init("Support this Project", "#29abe0", "M4M695AFP");
+                                kofiwidget2.draw();
+                            </script>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <hr />
-            <h2>Past Work</h2>
+        <hr />
+        <h2>Past Work</h2>
+        <hr />
+        <div class="project-showcase">
+            <div>
+                <img src="./images/thfchrctr_morriebird_2.jpg" alt="A black and white digital drawing of a masked cloaked thief crouched and sneaking taking light steps. The part of the thief's body under the cloak is more detailed whereas parts outside the cloak are mostly black silhouette. The thief holds a dagger in one hand and a vial of ink in the other. " />
+            </div>
+            <div class="project-showcase-info">
+                <h3>Faces of Orn</h3>
+                <p><i>A collection of NPC illustrations by various artists. I created a character given the prompt "Thief."</i></p>
+                <button>Get Faces of Orn on itch.io.</button>
+                </a>
+            </div>
+        </div>
+        <hr />
+        <div class="project-showcase">
+            <div>
+                <img src="./images/blckbxs_morriebird_2.jpg" alt="Two persons both hold and talk into a featureless black box. Both are depicted as a floating portrait to represent distance but happily chatting via the black boxes. Black and white digital drawing." />
+            </div>
+            <div class="project-showcase-info">
+                <h3>1D20 TEA Artifacts</h3>
+                <p><i>A 7 page supplement written by Erwin-the-German offering 20 new artificats for <a href="https://www.electrumarchive.com/">The Electrum Archive</a>. Created for TEA Jam 2025.</i></p>
+                <a href="https://erwin-the-german.itch.io/1d20-artifacts-for-the-electrum-archive">
+                    <button>Get 1D20 Artifacts on itch.io.</button>
+                </a>
+            </div>
+        </div>
+        <div class="project-showcase-gallery">
+            <div class="row">
+                <div class="column">
+                    <img src="./images/mtlrds_morriebird_2.jpg" alt="Three black  featureless metal rods float forming a pyramid. The lower base of each rod is circled and a line connects each circle. Black and white digital drawing." />
+                </div>
+                <div class="column">
+                    <img src="./images/sprtnllr_morriebird_2.jpg" alt="Two arms rise out of bottom frame. The right hand delicately holds a long tapering implement featuring a small tank of black ink. Ink drips from the narrower end of the of implement. The left hand holds a black rod with a dish on top to catch the dripping ink. Black and white digital drawing." />
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="project-showcase">
+            <div>
+                <img src="./images/slmsndepcrs_killjester_morriebird.png" />
+            </div>
+            <div class="project-showcase-info">
+                <h3>Sanctimonious Slimes vs Expired Epicures (SSVEE)</h3>
+                <p><i> An adventure written by Nick LS Whelan (Papers and Pencils, Miscreated Creatures) brimming with dynamic factions and weird magic. Delve into the dungeon and face an ennui afflicted medusa, holier-than-thou slime people, and hedonistic skeletons! </i></p>
+
+                <p class="ko-fi-button">I illustrated the cover and the majority of interior pieces.</p>
+                <a href="https://www.killjester.com/products/ssvee">
+                    <button>Get SSVEE from Kill Jester</button>
+                </a>
+            </div>
+        </div>
+        <div class="project-showcase-gallery">
+            <div class="row">
+                <div class="column">
+                    <img src="./images/jllysklly_klljstr_morriebird.png" />
+                    <img src="./images/frl_slmsndepcrs_killjester_morriebird.png" />
+                </div>
+                <div class="column">
+                    <img src="./images/slmsndepcrs_cvr_killjester_morriebird.jpg" />
+                    <img src="./images/snmn_klljstr_morriebird.png" />
+                    <img src="./images/snkys_slmsndepcrs_killjester_morriebird.png" />
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="project-showcase">
+            <div>
+                <img src="./images/lflkdl_zth_morriebird.png" />
+            </div>
+            <div class="project-showcase-info">
+                <h3>Eel Folk Aristocrat</h3>
+                <p>A cover for Eel Folk Aristocrat, a DURF Archetype written by Kris Redmond. Created for DURF JAM 2023.</p>
+                <a href="https://sniffycrab.itch.io/eel-folk-aristocrat">
+                    <button>Get Eel Folk Aristocrat on itch.io.</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HIRE ME TAB -->
+    <div id="hrm" class="tabcontent">
+        <hr />
+        <p>🚧This page is under construction!🚧</p>
+        <p>Please contact me via email or discord about commissions and let's chat!</p>
+        <br>
+        <p>I'll share drafts/WIP and will request complete payment before I finish work. </p>
+        <br>
+        <p>I use paypal or wise.</p>
+        <br>
+        <p>I am reworking my price chart. To give a general idea of prices a single full-body black and white drawing would be $70. I do offer cheaper rates if buying in bulk so to speak. Such as if you want me to illustrate an entire book (including cover, complete interior art, and smaller flavor art) that could be about $400. I am also open to a "sharing the profit" payment system with no upfront payment. I welcome price negotiation. </p>
+        <hr />
+        <!-- PRICE CHART -->
+        <!-- <div>
+            <h2>Price Chart</h2>
+            <div>
+                <ul>
+                    <li>Prices are negotiable, please ask!</li>
+                    <li>Paypal only</li>
+                    <li>I'll share drafts/WIP and will request complete payment before I finish work.</li>
+                    <li>Commissions are not first come, first serve.</li>
+                </ul>
+            </div>
             <hr />
             <div class="project-showcase">
                 <div>
-                    <img src="./images/slmsndepcrs_killjester_morriebird.png" />
+                    <img src="./images/mrvnglss_morriebird.png" />
                 </div>
                 <div class="project-showcase-info">
-                    <h3>Sanctimonious Slimes vs Expired Epicures (SSVEE)</h3>
-                    <p><i> An adventure written by Nick LS Whelan (Papers and Pencils, Miscreated Creatures) brimming with dynamic factions and weird magic. Delve into the dungeon and face an ennui afflicted medusa, holier-than-thou slime people, and hedonistic skeletons! </i></p>
-
-                    <p class="ko-fi-button">I illustrated the cover and the majority of interior pieces.</p>
-                    <a href="https://www.killjester.com/products/ssvee">
-                        <button>Get SSVEE from Kill Jester</button>
-                    </a>
-                </div>
-            </div>
-            <div class="project-showcase-gallery">
-                <div class="row">
-                    <div class="column">
-                        <img src="./images/jllysklly_klljstr_morriebird.png" />
-                        <img src="./images/frl_slmsndepcrs_killjester_morriebird.png" />
-                    </div>
-                    <div class="column">
-                        <img src="./images/slmsndepcrs_cvr_killjester_morriebird.jpg" />
-                        <img src="./images/snmn_klljstr_morriebird.png" />
-                        <img src="./images/snkys_slmsndepcrs_killjester_morriebird.png" />
-                    </div>
+                    <h3>Simple Portrait</h3>
+                    <p>Starting price: $35</p>
+                    <p>Black and white, digital pencil.</p>
+                    <p>Simple portraits can include half body with limited motion and detail.</p>
                 </div>
             </div>
             <hr />
@@ -156,265 +257,187 @@
                     <img src="./images/lflkdl_zth_morriebird.png" />
                 </div>
                 <div class="project-showcase-info">
-                    <h3>Eel Folk Aristocrat</h3>
-                    <p>A cover for Eel Folk Aristocrat, a DURF Archetype written by Kris Redmond. Created for DURF JAM 2023.</p>
-                    <a href="https://sniffycrab.itch.io/eel-folk-aristocrat">
-                        <button>Get Eel Folk Aristocrat on itch.io.</button>
-                    </a>
+                    <h3>Complex Portrait</h3>
+                    <p>Starting price: $55</p>
+                    <p>Black and white, digital pencil.</p>
+                    <p>A complex portrait includes dramatic poses, motion, multiple subjects, detailed backgrounds.</p>
                 </div>
             </div>
-        </div>
-
-        <!-- HIRE ME TAB -->
-        <div id="hrm" class="tabcontent">
             <hr />
-            <p>Do you need multiple pieces? Please contact me and let's work out the details. The prices below are more for one-off commissions.</p>
-            <hr />
-            <!-- PRICE CHART -->
             <div>
-                <h2>Price Chart</h2>
-                <div>
-                    <ul>
-                        <li>Prices are negotiable, please ask!</li>
-                        <li>Paypal only</li>
-                        <li>I'll share drafts/WIP and will request complete payment before I finish work.</li>
-                        <li>Commissions are not first come, first serve.</li>
-                    </ul>
-                </div>
-                <hr />
                 <div class="project-showcase">
                     <div>
-                        <img src="./images/mrvnglss_morriebird.png" />
-                    </div>
-                    <div class="project-showcase-info">
-                        <h3>Simple Portrait</h3>
-                        <p>Starting price: $35</p>
-                        <p>Black and white, digital pencil.</p>
-                        <p>Simple portraits can include half body with limited motion and detail.</p>
-                    </div>
-                </div>
-                <hr />
-                <div class="project-showcase">
-                    <div>
-                        <img src="./images/lflkdl_zth_morriebird.png" />
-                    </div>
-                    <div class="project-showcase-info">
-                        <h3>Complex Portrait</h3>
-                        <p>Starting price: $55</p>
-                        <p>Black and white, digital pencil.</p>
-                        <p>A complex portrait includes dramatic poses, motion, multiple subjects, detailed backgrounds.</p>
-                    </div>
-                </div>
-                <hr />
-                <div>
-                    <div class="project-showcase">
-                        <div>
-                            <img src="./images/vllgby_morriebird.png" />
-                        </div>
-                        <div class="project-showcase-info">
-                            <h3>Simple Full-Body</h3>
-                            <p>Starting price: $65</p>
-                            <p>Black and white, digital pencil.</p>
-                            <p>Simple full-body includes idle poses, no background</p>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="addon-table">
-                    <div>
-                        <table>
-                            <tr>
-                                <th>Addon</th>
-                                <th>Additional Cost</th>
-                                <th>Example</th>
-                            </tr>
-                            <tr>
-                                <td class="td-buffer">Flat Color</td>
-                                <td class="td-buffer">+ $20</td>
-                                <td>
-                                    <img src="./images/akiln_morriebird_60p-protected-intensity-DEFAULT-V2.png" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="td-buffer">Speech Bubbles</td>
-                                <td class="td-buffer">FREE</td>
-                                <td><img src="./images/bkrspct_sreenshot.png" /></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <!-- PRICE CHART END -->
-            <hr />
-            <div>
-                <h2>🔍 Please Read</h2>
-                <ul>
-                    <li>I like to draw:</li>
-                    <ul>
-                        <li>buff ladies</li>
-                        <li>sympathetic monsters</li>
-                        <li>nature and landscapes</li>
-                        <li>low fantasy, down-to-earth fantasy, folklore</li>
-                        <li>weird stuff</li>
-                    </ul>
-
-                    <br />
-
-                    <li>
-                        I will <strong>not</strong> draw:
-                        <ul>
-                            <li>Depictions of real persons.</li>
-                            <li>White supremacy bullshit, e.g., categorically evil races or "hero cops" (ACAB).</li>
-                            <li>SWERF bullshit.</li>
-                            <li>TERF bullshit.</li>
-                            <li>Sexual imagery of children, including childlike fictional characters.</li>
-                        </ul>
-                    </li>
-
-                    <br />
-
-                    <li>Other:</li>
-                    <ul>
-                        <li>I'm comfortable drawing explicit adult content, fetishes, and violence. Please contact me via email regarding NSFW art.</li>
-                        <li>I'm not great at detailed architecture and mechanics but happy to give it a try.</li>
-                    </ul>
-                </ul>
-            </div>
-
-            <hr />
-
-            <div>
-                <h2>©️ Copyright</h2>
-                <ul>
-                    <li>I maintain all rights reserved for all work.</li>
-                    <li>All commissions are for personal use only unless otherwise arranged for commercial use.</li>
-                    <li>Altering my work for personal use only is welcomed! For example, adding color to line art.</li>
-                    <li>Not for NFTs/AI (like this does anything).</li>
-                    <li>Please credit me as "morriebird" and provide a link to the original piece and/or this website "morriebird.art" when applicable.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- GALLERY TAB -->
-        <div id="gllry" class="tabcontent">
-            <div class="project-showcase-gallery">
-                <div id="full-gallery-buttons">
-                    Find more of my gallery on Cara:
-                    <br />
-                    <a href="https://cara.app/morriebird">
-                        <button id="cara-button">
-                            <img src="./images/socials/cara.png" />
-                        </button>
-                    </a>
-                </div>
-                <hr />
-                <div class="row">
-                    <div class="column">
-                        <img src="./images/mnstrdngsklly_morriebird_40p-protected-intensity-DEFAULT-V2.png" />
-                        <img src="./images/slmsndepcrs_killjester_morriebird.png" />
-                        <img src="./images/jllysklly_klljstr_morriebird.png" />
-                        <img src="./images/spcdl_zth_morriebird.png" />
-                    </div>
-                    <div class="column">
                         <img src="./images/vllgby_morriebird.png" />
-                        <img src="./images/snmn_klljstr_morriebird.png" />
-                        <img src="./images/lflkdl_zth_morriebird.png" />
-                        <img src="./images/mrvnglss_morriebird.png" />
-                        <img src="./images/snkys_slmsndepcrs_killjester_morriebird.png" />
+                    </div>
+                    <div class="project-showcase-info">
+                        <h3>Simple Full-Body</h3>
+                        <p>Starting price: $65</p>
+                        <p>Black and white, digital pencil.</p>
+                        <p>Simple full-body includes idle poses, no background</p>
                     </div>
                 </div>
             </div>
+            <hr />
+            <div class="addon-table">
+                <div>
+                    <table>
+                        <tr>
+                            <th>Addon</th>
+                            <th>Additional Cost</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td class="td-buffer">Flat Color</td>
+                            <td class="td-buffer">+ $20</td>
+                            <td>
+                                <img src="./images/akiln_morriebird_60p-protected-intensity-DEFAULT-V2.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-buffer">Speech Bubbles</td>
+                            <td class="td-buffer">FREE</td>
+                            <td><img src="./images/bkrspct_sreenshot.png" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div> -->
+        <!-- PRICE CHART END -->
+        <hr />
+        <div>
+            <h2>📝 Credit</h2>
+            <ul>
+                <li>Credit me as <strong>morriebird</strong></li>
+                <li>Wherever applicable inlude my website: <a href="https://www.morriebird.art/">morriebird.art</a></li>
+            </ul>
+            <hr />
+            <h2>🔍 Please Read</h2>
+            <ul>
+                <li>
+                    I will <strong>not</strong> draw:
+                    <ul>
+                        <li>Depictions of real persons.</li>
+                        <li>White supremacy bullshit, e.g., categorically evil races or "hero cops" (ACAB).</li>
+                        <li>SWERF bullshit.</li>
+                        <li>TERF bullshit.</li>
+                        <li>Sexual imagery of children, including "technically adult" childlike fictional characters.</li>
+                    </ul>
+                </li>
+
+                <br />
+
+                <li>Other:</li>
+                <ul>
+                    <li>I'm comfortable drawing explicit adult content, fetishes, and violence. Please contact me via email or DM in Discord regarding NSFW art.</li>
+
+                </ul>
+            </ul>
         </div>
 
-        <script>
-            // ------------START TAB CONTENT SCRIPT--------------------
-            function openProfile(evt, profileName) {
-                // Declare all variables
-                var i, tabcontent, tablinks;
+        <hr />
 
-                // Get all elements with class="tabcontent" and hide them
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
+        <div>
+            <h2>©️ Copyright</h2>
+            <ul>
+                <li>I maintain all rights reserved for all work.</li>
+                <li>All commissions are for personal use only unless otherwise arranged for commercial use.</li>
+                <li>Altering my work for personal use only is welcomed! For example, adding color to line art.</li>
+                <li>Tattoos using my art is welcomed and cool! Your Tattoo Artist is welcomed to alter my art or recreate it in their style for your custom tattoo. Please send me pics!</li>
+                <li>Not for NFTs or A.I. training (like this does anything).</li>
+            </ul>
+        </div>
+    </div>
 
-                // Get all elements with class="tablinks" and remove the class "active"
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
+    <script>
+        // ------------START TAB CONTENT SCRIPT--------------------
+        function openProfile(evt, profileName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
 
-                // Show the current tab, and add an "active" class to the button that opened the tab
-                document.getElementById(profileName).style.display = "block";
-                evt.currentTarget.className += " active";
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
             }
 
-            // ------------END TAB CONTENT SCRIPT----------------------
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
 
-            // ------------START GALLERY TAB SCRIPT--------------------
-            // const art = [
-            //     {
-            //         title: "Eelfolk Duel",
-            //         alt: "Two anthropomorphic eels pistol duel. The eel in the foreground is shot in the shoulder by the eel in the background.",
-            //         img: "./images/lflkdl_zth_morriebird.png",
-            //         txt: "A commission for Eel Folk Aristocrat, a DURF Archetype written by Kris Redmond. Created for DURF JAM 2023 you <a href='https://sniffycrab.itch.io/eel-folk-aristocrat'>download Eel Folk Aristocrat on itch.io.</a>. ",
-            //         fdbck: "none",
-            //     },
-            //     {
-            //         title: "Eelfolk Duel",
-            //         alt: "Two anthropomorphic eels pistol duel. The eel in the foreground is shot in the shoulder by the eel in the background.",
-            //         img: "./images/spcdl_zth_morriebird.png",
-            //         txt: "A commission for Eel Folk Aristocrat, a DURF Archetype written by Kris Redmond. Created for DURF JAM 2023 you <a href='https://sniffycrab.itch.io/eel-folk-aristocrat'>download Eel Folk Aristocrat on itch.io.</a>. ",
-            //         fdbck: "none",
-            //     },
-            //     {
-            //         title: "Cover | Sanctimonious Slimes vs Expired Epicures",
-            //         alt: "Two skeletons (left) sit together. The left most skeleton holds a pitcher above its head to pour drink into its mouth. The rightmost skeleton admires a flower. Three slime creatures (right) look at the skeletons in disgust. Snakes decorate the background and border of the image; all emerging from a cracked skull (top). The text reads, Sanctimonious Slimes vs Expired Epicures, A Dungeon Delve Adventure Nick LS Whelan. ",
-            //         img: "./images/slmsndepcrs_killjester_morriebird.png",
-            //         txt: "A cover for Sanctimonious Slimes vs Expired Epicures by Nick LS Whelan, commissioned by <a href='https://www.killjester.com/'>Kill Jester Publishing</a>",
-            //         fdbck: "none",
-            //     },
-            //     {
-            //         title: "Skelly and Jelly",
-            //         alt: "A skeleton pulls a single grape from a bunch with their teeth, and gazes at a wine glass they're holding in the foreground. Inside the glass a slime glares back.",
-            //         img: "./images/jllysklly_klljstr_morriebird.png",
-            //         txt: "An interior piece for Sanctimonious Slimes vs Expired Epicures by Nick LS Whelan. commissioned by <a href='https://www.killjester.com/'>Kill Jester Publishing</a>. I wanted to depict the relationship between the Slimes and Undead. ",
-            //         fdbck: "none",
-            //     },
-            //     {
-            //         title: "She Who Lifts the Sun and Turns the Moon",
-            //         alt: "Left hand circled by phases of the moon. Right hand under a sun with stylized light rays",
-            //         img: "./images/snmn_klljstr_morriebird.png",
-            //         txt: "An interior piece for Sanctimonious Slimes vs Expired Epicures by Nick LS Whelan.",
-            //         fdbck: "none",
-            //     },
-            // ];
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(profileName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-            // let gallery = "";
+        // ------------END TAB CONTENT SCRIPT----------------------
 
-            // for (let i = 0; i < art.length; i++) {
-            //     let element = `<div class="responsive">
-            //                 <div class="gallery">
-            //                     <div id="${i}" onClick="getId(this.id)">
-            //                         <img src="${art[i].img}" alt="${art[i].alt}">
-            //                     </div>
-            //                 </div>
-            //              </div>`;
+        // ------------START GALLERY TAB SCRIPT--------------------
+        // const art = [
+        //     {
+        //         title: "Eelfolk Duel",
+        //         alt: "Two anthropomorphic eels pistol duel. The eel in the foreground is shot in the shoulder by the eel in the background.",
+        //         img: "./images/lflkdl_zth_morriebird.png",
+        //         txt: "A commission for Eel Folk Aristocrat, a DURF Archetype written by Kris Redmond. Created for DURF JAM 2023 you <a href='https://sniffycrab.itch.io/eel-folk-aristocrat'>download Eel Folk Aristocrat on itch.io.</a>. ",
+        //         fdbck: "none",
+        //     },
+        //     {
+        //         title: "Eelfolk Duel",
+        //         alt: "Two anthropomorphic eels pistol duel. The eel in the foreground is shot in the shoulder by the eel in the background.",
+        //         img: "./images/spcdl_zth_morriebird.png",
+        //         txt: "A commission for Eel Folk Aristocrat, a DURF Archetype written by Kris Redmond. Created for DURF JAM 2023 you <a href='https://sniffycrab.itch.io/eel-folk-aristocrat'>download Eel Folk Aristocrat on itch.io.</a>. ",
+        //         fdbck: "none",
+        //     },
+        //     {
+        //         title: "Cover | Sanctimonious Slimes vs Expired Epicures",
+        //         alt: "Two skeletons (left) sit together. The left most skeleton holds a pitcher above its head to pour drink into its mouth. The rightmost skeleton admires a flower. Three slime creatures (right) look at the skeletons in disgust. Snakes decorate the background and border of the image; all emerging from a cracked skull (top). The text reads, Sanctimonious Slimes vs Expired Epicures, A Dungeon Delve Adventure Nick LS Whelan. ",
+        //         img: "./images/slmsndepcrs_killjester_morriebird.png",
+        //         txt: "A cover for Sanctimonious Slimes vs Expired Epicures by Nick LS Whelan, commissioned by <a href='https://www.killjester.com/'>Kill Jester Publishing</a>",
+        //         fdbck: "none",
+        //     },
+        //     {
+        //         title: "Skelly and Jelly",
+        //         alt: "A skeleton pulls a single grape from a bunch with their teeth, and gazes at a wine glass they're holding in the foreground. Inside the glass a slime glares back.",
+        //         img: "./images/jllysklly_klljstr_morriebird.png",
+        //         txt: "An interior piece for Sanctimonious Slimes vs Expired Epicures by Nick LS Whelan. commissioned by <a href='https://www.killjester.com/'>Kill Jester Publishing</a>. I wanted to depict the relationship between the Slimes and Undead. ",
+        //         fdbck: "none",
+        //     },
+        //     {
+        //         title: "She Who Lifts the Sun and Turns the Moon",
+        //         alt: "Left hand circled by phases of the moon. Right hand under a sun with stylized light rays",
+        //         img: "./images/snmn_klljstr_morriebird.png",
+        //         txt: "An interior piece for Sanctimonious Slimes vs Expired Epicures by Nick LS Whelan.",
+        //         fdbck: "none",
+        //     },
+        // ];
 
-            //     gallery += element;
-            // }
+        // let gallery = "";
 
-            // document.getElementById("gallery").innerHTML = gallery;
-            // ------------END GALLERY TAB SCRIPT--------------------
-        </script>
-        <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
-        <script>
-            kofiWidgetOverlay.draw("morriebird", {
-                type: "floating-chat",
-                "floating-chat.donateButton.text": "Tip Jar",
-                "floating-chat.donateButton.background-color": "#00b9fe",
-                "floating-chat.donateButton.text-color": "#fff",
-            });
-        </script>
-    </body>
+        // for (let i = 0; i < art.length; i++) {
+        //     let element = `<div class="responsive">
+        //                 <div class="gallery">
+        //                     <div id="${i}" onClick="getId(this.id)">
+        //                         <img src="${art[i].img}" alt="${art[i].alt}">
+        //                     </div>
+        //                 </div>
+        //              </div>`;
+
+        //     gallery += element;
+        // }
+
+        // document.getElementById("gallery").innerHTML = gallery;
+        // ------------END GALLERY TAB SCRIPT--------------------
+    </script>
+    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+    <script>
+        kofiWidgetOverlay.draw("morriebird", {
+            type: "floating-chat",
+            "floating-chat.donateButton.text": "Tip Jar",
+            "floating-chat.donateButton.background-color": "#00b9fe",
+            "floating-chat.donateButton.text-color": "#fff",
+        });
+    </script>
+</body>
+
 </html>
